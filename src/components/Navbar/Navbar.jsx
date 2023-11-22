@@ -28,7 +28,8 @@ function Navbar() {
         <nav className="px-4 py-4 flex justify-between md:mx-5">
           <div className="text-[#EAEFBD] text-2xl">
             <a href="/">
-              World <span className="text-[#90BE6D]">Khobor</span>
+              World{" "}
+              <span className="text-[#D62246] font-semibold  ">KHOBOR</span>
             </a>
           </div>
 
@@ -40,10 +41,10 @@ function Navbar() {
                   <NavLink
                     to={path}
                     className={({isActive}) =>
-                      `text-amber-400 font-semibold  ${
+                      ` font-semibold  ${
                         isActive
                           ? `text-[#EA2B1F] pb-2 duration-300  border-b border-[#EDAE49] `
-                          : `text-amber-400`
+                          : ``
                       }`
                     }>
                     {link}

@@ -16,8 +16,10 @@ function Banner() {
             <span className="text-2xl px-1  ">Tips</span> and{" "}
             <span className="text-2xl px-1  ">Tutorials</span>.
           </p>
-          <div className="flex gap-3 items-center  text-[#7371FC] text-lg sm:text-xl">
-            <Link to="/">Learn More</Link>
+          <div className="cursor-pointer flex gap-3 items-center  text-[#7371FC] text-lg sm:text-xl">
+            <Link to="/" className="hover:text-blue-700">
+              Learn More
+            </Link>
             <FaArrowRightLong size={20} />
           </div>
         </div>

@@ -6,8 +6,9 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily:{
-        primary: ["Inter", "sans-serif"]
+      fontFamily: {
+        primary: ["Inter", "sans-serif"],
+
       }
     },
   },
