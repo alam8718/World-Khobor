@@ -1,5 +1,4 @@
 import React from "react";
-import Fotter from "../Fotter/Fotter";
 
 function Pagination({currentPage, blogs, pageSize, setCurrentPage}) {
   let pages = [];

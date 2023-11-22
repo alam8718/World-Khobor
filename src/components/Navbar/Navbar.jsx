@@ -18,13 +18,12 @@ function Navbar() {
   const navitems = [
     {path: "/", link: "Home"},
     {path: "/services", link: "Services"},
-    {path: "/about", link: "About"},
     {path: "/blogs", link: "Blogs"},
     {path: "/contact", link: "Contact"},
   ];
   return (
     <>
-      <header className="bg-[#37371F] fixed top-0 right-0 left-0  ">
+      <header className="bg-[#37371F] h-[70px] fixed top-0 right-0 left-0  ">
         <nav className="px-4 py-4 flex justify-between md:mx-5">
           <div className="text-[#EAEFBD] text-2xl">
             <a href="/">
@@ -77,7 +76,7 @@ function Navbar() {
           </div>
 
           {/* mobile menu bar  */}
-          <div className="text-white lg:hidden z-[99]">
+          <div className="text-white  lg:hidden z-[99]">
             <button className="cursor-pointer" onClick={handleToggle}>
               {open ? <FaXmark size={20} /> : <FaBars size={20} />}
             </button>

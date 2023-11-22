@@ -4,6 +4,7 @@ import Data from "../../data";
 import Pagination from "./Pagination";
 import CategorySelection from "./CategorySelection";
 import Sidebar from "./Sidebar";
+import Fotter from "../Fotter/Fotter";
 
 function BlogPage() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -21,7 +22,7 @@ function BlogPage() {
   };
 
   return (
-    <div className="h-screen">
+    <div className="h-screen w-auto">
       {/* blogcards section  */}
       <div className="flex flex-col lg:flex-row gap-12">
         <BlogCard
@@ -42,6 +43,9 @@ function BlogPage() {
           blogs={Data}
           pageSize={pageSize}
         />
+      </div>
+      <div className="w-full">
+      <Fotter />
       </div>
     </div>
   );
