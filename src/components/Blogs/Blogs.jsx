@@ -1,22 +1,21 @@
 import React from "react";
-import BlogPage from "./BlogPage";
+import BlogPage from "./BlogPage"; 
+import Unibanner from "../Pages/Unibanner";
+import Fotter from "../Fotter/Fotter";
 
 
 function Blogs() {
   return (
-    <div className="">
-      <div className="py-40 bg-[#2E3532] text-center text-white px-4">
-        <h1 className="text-5xl lg:text-7xl leading-snug font-bold mb-5 text-[#F9A620] ">
-          Blog Page
-        </h1>
-      </div>
+    <>
+      <Unibanner text="Blogs " />
 
-      {/* blogs container  */}
-      <div className=" max-w-7xl mx-auto">
+     
+      <div className="h-screen ">
         <BlogPage  />
+        <Fotter />
       </div>
       
-    </div>
+    </>
   );
 }
 

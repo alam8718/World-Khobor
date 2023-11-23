@@ -1,13 +1,14 @@
 import React from "react";
 import Unibanner from "../Pages/Unibanner";
-import Fotter from "../Fotter/Fotter";
 import ServicesCard from "./ServicesCard";
+import Fotter from '../Fotter/Fotter'
 
 function Services() {
   return (
-    <div className="bg-[#2E3532]">
+    <>
+    <div className="bg-[#2E3532] ">
       <Unibanner text="Our Services" />
-      <div className="mb-28 flex justify-center flex-wrap md:gap-10 gap-5">
+      <div className=" flex justify-center flex-wrap md:gap-10 gap-5">
         <ServicesCard
           plans="Light Blogger"
           money={30}
@@ -23,8 +24,9 @@ function Services() {
           api="Unlimited"
         />
       </div>
-      <Fotter />
     </div>
+    <Fotter />
+    </>
   );
 }
 

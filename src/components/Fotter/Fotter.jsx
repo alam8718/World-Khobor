@@ -3,8 +3,8 @@ import React from "react";
 function Fotter() {
   return (
     <>
-      <div className=" bg-[#2E3532]  cursor-pointer  ">
-        <div className="py-10 px-4 flex flex-col md:flex-row justify-between ">
+      <div className="w-full bg-[#2E3532]  cursor-pointer  ">
+        <div className="py-10 mx-20 flex flex-col md:flex-row justify-between ">
           <div className="flex flex-wrap gap-3 justify-between w-full md:w-[60%] ">
             <div>
               <p className="text-white">Category</p>

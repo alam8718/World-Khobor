@@ -9,22 +9,14 @@ import Fotter from "../Fotter/Fotter";
 function BlogPage() {
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 12;
-  const [category, setCategory] = useState(null);
+  
   const [selectedCategory, setSelectedCategory] = useState(null);
-  const [activeCategory, setActiveCategory] = useState(null);
-
-  // for page change button
-  //
-  const handleCategoryChange = (category) => {
-    setSelectedCategory(category);
-    setCurrentPage(1);
-    setActiveCategory(category);
-  };
+ 
 
   return (
-    <div className="h-screen w-auto">
+    <div className=" container mx-auto">
       {/* blogcards section  */}
-      <div className="flex flex-col lg:flex-row gap-12">
+      <div className="  flex flex-col lg:flex-row gap-12">
         <BlogCard
           blogs={Data}
           currentPage={currentPage}
@@ -44,9 +36,7 @@ function BlogPage() {
           pageSize={pageSize}
         />
       </div>
-      <div className="w-full">
-      <Fotter />
-      </div>
+       
     </div>
   );
 }

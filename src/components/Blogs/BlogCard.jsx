@@ -1,17 +1,20 @@
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
 import {FaRegCircleUser} from "react-icons/fa6";
+import Fotter from '../Fotter/Fotter'
+
 
 function BlogCard({blogs, currentPage, selectedCategory, pageSize}) {
   const filterBlog = blogs
     .filter(() => !selectedCategory || blogs.category === selectedCategory)
     .slice((currentPage - 1) * pageSize, currentPage * pageSize);
   return (
-    <div className="md:h-[400px] mt-28 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 ">
+    <>
+    <div className="  mt-28 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 ">
       {filterBlog.map((blog) => (
         <Link
           key={blog.id}
-          className="p-4 shadow-lg shadow-slate-300 rounded-lg cursor-pointer">
+          className="h-auto p-4 shadow-lg shadow-slate-300 rounded-lg cursor-pointer">
           {/* blog image  */}
           <div>
             <img
@@ -34,6 +37,8 @@ function BlogCard({blogs, currentPage, selectedCategory, pageSize}) {
         </Link>
       ))}
     </div>
+
+    </>
   );
 }
 
